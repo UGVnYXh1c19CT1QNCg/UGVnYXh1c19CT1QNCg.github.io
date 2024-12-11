@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Products</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #333;
+    }
+
+    .pricing-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .plan {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan h2 {
+        margin: 10px 0;
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .price {
+        font-size: 1.4em;
+        color: #007ACC;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .units {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .bonus {
+        background: #27ae60;
+        color: #fff;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 0.85em;
+        color: #555;
+        text-align: center;
+    }
+
+    .total {
+        font-size: 0.9em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+        .plan {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>Piani di Supporto</h1>
+
+<div class="pricing-container">
+    <div class="plan">
+        <h2>Supporto Base</h2>
+        <div class="price">120pp / 1 utente</div>
+        <div class="description">Supporto essenziale</div>
+    </div>
+
+    <div class="plan">
+        <h2>Supporto Standard</h2>
+        <div class="price">110pp / 3 utenti</div>
+        <div class="total">(330€ tot)</div>
+        <div class="description">Supporto standard con ottimo rapporto qualità/prezzo</div>
+    </div>
+
+    <div class="plan">
+        <h2>Supporto Prioritario</h2>
+        <div class="price">100pp / 5 utenti</div>
+        <div class="total">(500€ tot)</div>
+        <div class="bonus">+1 mese gratuito</div>
+        <div class="description">Risposte più rapide e maggiore attenzione</div>
+    </div>
+
+    <div class="plan">
+        <h2>Supporto VIP</h2>
+        <div class="price">90pp / 10 utenti</div>
+        <div class="total">(900€ tot)</div>
+        <div class="description">Aggiornamenti prioritari e servizio d’élite</div>
+    </div>
+
+    <div class="plan">
+        <h2>Supporto Premium</h2>
+        <div class="price">85pp / 20 utenti</div>
+        <div class="total">(1700€ tot)</div>
+        <div class="bonus">+2 mesi gratuiti</div>
+        <div class="description">Onboarding personalizzato e assistenza top di gamma</div>
+    </div>
+</div>
+
+</body>
+</html>
